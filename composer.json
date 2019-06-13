@@ -1,0 +1,25 @@
+{
+  "name": "mepatek/totelib",
+  "license": "proprietary",
+  "description": "PHP Library for work with TOTE SQL",
+  "authors": [
+    {
+      "name": "Mepatek",
+      "homepage": "https://www.mepatek.cz/"
+    }
+  ],
+  "require": {
+    "php": ">=7.2.0",
+    "ext-sqlsrv": "*",
+    "ext-pdo_sqlsrv": "*",
+    "vlucas/phpdotenv": "^3.3",
+    "dibi/dibi": "^4.0",
+    "nette/utils": "^3.0"
+
+  },
+  "autoload": {
+    "psr-4": {
+      "Mepatek\\ToteLib\\": "src/"
+    }
+  }
+}
