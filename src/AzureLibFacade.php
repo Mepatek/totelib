@@ -32,7 +32,7 @@ class AzureLibFacade
      */
     public function __construct(string $dir)
     {
-        $this->dotenv = Dotenv::create($dir);
+        $this->dotenv = Dotenv::createUnsafeImmutable($dir);
         $this->dotenv->load();
         $this->dotenv->required(['AZURE_SERVER', 'AZURE_USERNAME', 'AZURE_PASSWORD']);
     }

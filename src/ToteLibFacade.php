@@ -32,7 +32,7 @@ class ToteLibFacade
      */
     public function __construct(string $dir)
     {
-        $this->dotenv = Dotenv::create($dir);
+        $this->dotenv = Dotenv::createUnsafeImmutable($dir);
         $this->dotenv->load();
         $this->dotenv->required(['TOTE_SERVER', 'TOTE_USERNAME', 'TOTE_PASSWORD']);
     }
