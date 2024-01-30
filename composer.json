@@ -12,9 +12,9 @@
     "php": ">=7.2.0",
     "ext-sqlsrv": "*",
     "ext-pdo_sqlsrv": "*",
-    "vlucas/phpdotenv": "^3.3",
-    "dibi/dibi": "^4.0",
-    "nette/utils": "^3.0"
+    "vlucas/phpdotenv": ">=3.3",
+    "dibi/dibi": "^5",
+    "nette/utils": "^4"
 
   },
   "autoload": {
